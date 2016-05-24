@@ -1,5 +1,5 @@
 Package.describe({
-  'name': 'brucejo75:bootstrap-multiselect',
+  'name': 'brucejo:bootstrap-multiselect',
   'version': '0.0.1',
   'summary': 'Bootstrap Multiselect wrapper for Meteor',
   'git': 'https://github.com/brucejo75/meteor-bootstrap-multiselect.git',
