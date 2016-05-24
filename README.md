@@ -79,6 +79,6 @@ Template.msExample.helpers({
 
 ```
 
-The sample can be found here: **TBD**...
+The sample can be found here: **[here](https://github.com/brucejo75/meteor-bootstrap-multiselect-sample)**
 
 Enjoy!
