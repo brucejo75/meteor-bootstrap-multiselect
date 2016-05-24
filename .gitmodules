@@ -1,0 +1,8 @@
+[submodule "bootstrap-multiselect"]
+	path = bootstrap-multiselect
+	url = https://github.com/davidstutz/bootstrap-multiselect.git
+	branch = master
+[submodule "bootstrap-select"]
+	path = bootstrap-select
+	url = https://github.com/silviomoreto/bootstrap-select.git
+	branch = master

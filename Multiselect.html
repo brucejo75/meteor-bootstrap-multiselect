@@ -1,0 +1,8 @@
+
+<template name="Multiselect">
+  <select name="{{ name }}" multiple="multiple">
+    {{#each menuItems }}
+      {{> Template.contentBlock args }}
+    {{/each}}
+  </select>
+</template>
