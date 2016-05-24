@@ -1,6 +1,6 @@
 ## [brucejo75](https://github.com/brucejo75)'s Meteor wrapper for [Bootstrap Multiselect](https://github.com/davidstutz/bootstrap-multiselect)
 
-This is a blatant merge of [emdagon](https://github.com/emdagon/meteor-bootstrap-multiselect)'s [JSSolution](https://github.com/JSSolutions/meteor-bootstrap-multi-select)'s meteor-bootstrap-wrappers. I tried to user the wrappers directly and was immediately stopped by the lack of [documentation](https://github.com/emdagon/meteor-bootstrap-multiselect/issues/1) on the emdagon version.  But I really liked the approach with a content block.  JSSolution provided some better documentation to help me sort out the workings.
+This is a blatant merge of [emdagon](https://github.com/emdagon/meteor-bootstrap-multiselect)'s and  [JSSolution](https://github.com/JSSolutions/meteor-bootstrap-multi-select)'s meteor-bootstrap-wrappers. I tried to use the wrappers directly and was immediately stopped by the lack of [documentation](https://github.com/emdagon/meteor-bootstrap-multiselect/issues/1) on the emdagon version.  But I really liked the approach with a content block.  JSSolution provided some better documentation to help me sort out the workings.
 
 So here is my attempt at providing a best of both worlds wrapper along with a little bit of documentation.
 
@@ -16,7 +16,7 @@ Here is an example of it in action:
 There are 4 arguments to the Multiselect content block:
 
  - *name* - **required:** this becomes the name of the underlying `<select>`statement.
- - *menuItems* - **required:** this is a list of objects that form the data context for the `<option>` statements.  The option statement will iterate through this list displaying each.  Because it is an object you will need to provide a helper to deliver the *menuItems*.  See the *menuItem* object description below.
+ - *menuItems* - **required:** this is a list of objects that form the data context for the `<option>` statements.  The template will iterate through this list displaying the option element setting the context equal to the object you define.  Because it is an object you will need to provide a helper to deliver the *menuItems*.  See the *menuItem* object description below.
  - *selectedList* - **required:** this is a list of the *menuItems* that should be selected at startup.
  - *configOptions* - This is the way you can pass in [multiselect configuration options](http://davidstutz.github.io/bootstrap-multiselect/#configuration-options) and really take advantage of the multiselect package.  These are is optional.
 
@@ -25,6 +25,9 @@ The menuItem object properties used by the content block.
  - *value* - **required:** this is the value assigned to this *menuItem*.  It is used by the block helper as an index into the `selectedItems` array, so a number or a string work.
 
 That is all the *menuItem* object is required to be, one property.  But you can load up other properties as a convenience, for example the `caption` property is specified in the snippet above.  And you will see with the example that I track the selected state for each *menuItem* in the `selected` property.
+
+### selectedAttr variable
+This is a convenience variable provided by the content block.  Internally, it calculates whether this should be `'selected'` or `''` depending upon the values in the `selectedList` at startup.  After startup, jQuery takes care of setting the `'selected'` attribute.
 
 ## Put it all together
 
