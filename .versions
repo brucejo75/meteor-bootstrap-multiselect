@@ -3,7 +3,7 @@ babel-runtime@0.1.8
 base64@1.0.8
 blaze@2.1.7
 blaze-tools@1.0.8
-brucejo:bootstrap-multiselect@0.0.1
+brucejo:bootstrap-multiselect@0.0.2
 caching-compiler@1.0.4
 caching-html-compiler@1.0.6
 check@1.2.1
