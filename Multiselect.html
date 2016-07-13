@@ -1,6 +1,6 @@
 
 <template name="Multiselect">
-  <select name="{{ name }}" multiple="multiple">
+  <select name="{{ name }}" multiple={{#unless radio}}"multiple"{{/unless}}>
     {{#each menuItems }}
       {{> Template.contentBlock args }}
     {{/each}}
