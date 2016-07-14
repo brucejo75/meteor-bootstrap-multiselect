@@ -9,7 +9,7 @@ You can use Multiselect API but the supplied helper makes it quite easy to use t
 ## Multiselect Block Helper
 Here is an example of it in action:
 ```
-  {{#Multiselect name='myMultiselect' menuItems='myMenuItems' selectedList=mySelectedList}}
+  {{#Multiselect name='myMultiselect' menuItems='myMenuItems' selectedList=mySelectedList radio=true}}
     <option value="{{value}}" {{selectedAttr}}>{{ caption }}</option>
   {{/Multiselect}}
 ```
@@ -18,7 +18,8 @@ There are 4 arguments to the Multiselect content block:
  - *name* - **required:** this becomes the name of the underlying `<select>`statement.
  - *menuItems* - **required:** this is a list of objects that form the data context for the `<option>` statements.  The template will iterate through this list displaying the option element setting the context equal to the object you define.  Because it is an object you will need to provide a helper to deliver the *menuItems*.  See the *menuItem* object description below.
  - *selectedList* - **required:** this is a list of the values of the *menuItems* that should be selected at startup.
- - *configOptions* - This is the way you can pass in [multiselect configuration options](http://davidstutz.github.io/bootstrap-multiselect/#configuration-options) and really take advantage of the multiselect package.  These are is optional.
+ - *configOptions* - **optional:** This is the way you can pass in [multiselect configuration options](http://davidstutz.github.io/bootstrap-multiselect/#configuration-options) and really take advantage of the multiselect package.  These are optional.
+ - *radio* - **optional:** set this to true if you want single select radio buttons instead of multi-select check boxes.
 
 ### menuItem object
 The menuItem object properties used by the content block.
