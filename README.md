@@ -1,3 +1,6 @@
+## Note: I stopped using this
+I found this solution before I understood how to user things like [bootstrap-select](https://silviomoreto.github.io/bootstrap-select/) directly in my html.  I recommend not using this.  It is too complex and pretty limited.  I will delete this in 6 months or so.
+
 ## [brucejo75](https://github.com/brucejo75)'s Meteor wrapper for [Bootstrap Multiselect](https://github.com/davidstutz/bootstrap-multiselect)
 
 This is a blatant merge of [emdagon](https://github.com/emdagon/meteor-bootstrap-multiselect)'s and  [JSSolution](https://github.com/JSSolutions/meteor-bootstrap-multi-select)'s meteor-bootstrap-wrappers. I tried to use the wrappers directly and was immediately stopped by the lack of [documentation](https://github.com/emdagon/meteor-bootstrap-multiselect/issues/1) on the emdagon version.  But I really liked the approach with a content block.  JSSolution provided some better documentation to help me sort out the workings.
